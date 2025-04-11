@@ -7,7 +7,8 @@
 <style scoped>
 .button {
   padding: 12px 24px;
-  background: linear-gradient(to top left, #14d461, #12acdd);
+  background: linear-gradient(to right, #14d461, #12acdd);
   border-radius: 12px;
+  color: #ffffff;
 }
 </style>
