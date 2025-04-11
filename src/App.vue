@@ -1,9 +1,16 @@
 <script setup>
-import AppButton from './components/AppButton.vue';
+import AppContest from './blocks/AppContest.vue';
 </script>
 
 <template>
-  <AppButton />
+  <div class="container">
+    <AppContest />
+  </div>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
+</style>
