@@ -12,5 +12,7 @@
   border-radius: 8px;
   font-size: 14px;
   line-height: 120%;
+  display: inline-block;
+  text-transform: uppercase;
 }
 </style>

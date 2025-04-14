@@ -1,10 +1,12 @@
 <script setup>
 import AppContest from './blocks/AppContest.vue';
+import AppAboutContest from './blocks/AppAboutContest.vue';
 </script>
 
 <template>
   <div class="container">
     <AppContest />
+    <AppAboutContest />
   </div>
 </template>
 
@@ -12,5 +14,6 @@ import AppContest from './blocks/AppContest.vue';
 .container {
   width: 1240px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 </style>

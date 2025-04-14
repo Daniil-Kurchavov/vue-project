@@ -1,6 +1,7 @@
-import './assets/reset.scss';
-import './assets/main.scss';
-import './assets/fonts.scss';
+import '@/assets/reset.scss';
+import '@/assets/main.scss';
+import '@/assets/fonts.scss';
+import '@/assets/typography.scss'
 
 import { createApp } from 'vue';
 import App from './App.vue';
