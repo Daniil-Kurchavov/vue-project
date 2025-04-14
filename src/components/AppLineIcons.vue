@@ -11,10 +11,6 @@
 </template>
 
 <style lang="scss">
-.line-icons__container {
-  margin-bottom: 60px;
-}
-
 .line {
   width: 1px;
   height: 75px;
@@ -24,13 +20,14 @@
 
 .line-icons__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  margin-bottom: 60px;
+  justify-content: space-around;
 }
 
 .line-icons__agent {
-  width: 138px;
-  height: 45px;
+  width: 180px;
+  height: 60px;
 
   & img {
     width: 100%;
@@ -39,8 +36,8 @@
 }
 
 .line-icons__project {
-  width: 92px;
-  height: 45px;
+  width: 120px;
+  height: 60px;
 
   & img {
     width: 100%;
@@ -49,8 +46,8 @@
 }
 
 .line-icons__teh {
-  width: 244px;
-  height: 45px;
+  width: 312px;
+  height: 60px;
 
   & img {
     width: 100%;

@@ -12,7 +12,7 @@ import AppAboutContest from './blocks/AppAboutContest.vue';
 
 <style scoped lang="scss">
 .container {
-  width: 1240px;
+  width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
 }

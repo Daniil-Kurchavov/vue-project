@@ -6,49 +6,54 @@ import AppLineIcons from '@/components/AppLineIcons.vue';
 
 <template>
   <div class="app-contest">
-    <div class="app-contest__container">
+    <div class="app-contest__content">
       <AppTag class="app-contest__tag">Технологический конкурс</AppTag>
       <h1 class="title-64">5G Умный город</h1>
       <p class="app-contest__text text-16">
-        Предложите свое уникальное решение<br />в сфере технологических разработок
+        Предложите свое уникальное решение в сфере технологических разработок
       </p>
       <div class="app-contest__bid">
         <AppButton>Принять участие</AppButton>
-        <p class="text-16 text__opacity">Заявки принимаются<br />до 27 марта</p>
+        <p class="text-16 text__opacity">Заявки принимаются до 27 марта</p>
       </div>
     </div>
-    <div class="app-contest__white-border"><img class="img" src="./../../public/graphics.png" alt="#" /><div class="app-contest__img"></div></div>
+    <div class="app-contest__image-wrapper">
+      <div class="app-contest__img-content">
+        <img class="app-contest__img" src="./../../public/graphics.png" alt="#" />
+      </div>
+    </div>
   </div>
   <AppLineIcons />
 </template>
 
 <style scoped lang="scss">
 .title-64 {
-  margin-bottom: 16px;
+  margin-bottom: 5px;
 }
 
 .text__opacity {
-  opacity: 0.4;
+  color: $gray;
+  width: 170px;
+  line-height: 150%;
 }
 
 .app-contest {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 80px;
+  margin-bottom: 85px;
+  justify-content: space-around;
 
-  img {
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    transform: translateY(-50%);
+  &__content {
+    margin-top: 45px;
   }
 
   &__tag {
-    margin-bottom: 24px;
+    margin-bottom: 15px;
   }
 
   &__text {
     margin-bottom: 48px;
+    width: 305px;
+    line-height: 150%;
   }
 
   &__bid {
@@ -57,19 +62,26 @@ import AppLineIcons from '@/components/AppLineIcons.vue';
   }
 
   &__img {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -14%;
+    }
+
+  &__img-content {
     width: 100%;
     height: 100%;
     background: linear-gradient(to right, #ddf9e8, rgba(0, 174, 70, 0.4));
     border-radius: 36px;
   }
 
-  &__white-border {
+  &__image-wrapper {
     position: relative;
-    background-color: #ffffff;
     border-radius: 36px;
     outline: 12px solid #fff;
-    width: 500px;
-    height: 450px;
+    width: 480px;
+    height: 430px;
     box-shadow: 0 21px 69.8px 0 rgba(0, 0, 0, 0.12);
   }
 }
