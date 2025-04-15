@@ -131,6 +131,7 @@ import AppLineIcons from '@/components/AppLineIcons.vue';
     width: 480px;
     height: 430px;
     box-shadow: 0 21px 69.8px 0 rgba(0, 0, 0, 0.12);
+    flex-shrink: 0;
 
     @media (max-width:991px) {
       width: 260px;
