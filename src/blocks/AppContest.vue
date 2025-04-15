@@ -46,8 +46,9 @@ import AppLineIcons from '@/components/AppLineIcons.vue';
   
   &__block {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 80px;
+    padding: 0 60px;
   }
 
   &__content {
@@ -66,7 +67,7 @@ import AppLineIcons from '@/components/AppLineIcons.vue';
 
   &__bid {
     display: flex;
-    gap: 16px;
+    gap: 15px;
   }
 
   &__img {
@@ -74,13 +75,13 @@ import AppLineIcons from '@/components/AppLineIcons.vue';
     z-index: 1;
     top: 50%;
     transform: translateY(-50%);
-    right: -14%;
+    right: -13%;
   }
 
   &__img-content {
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, #ddf9e8, rgba(0, 174, 70, 0.4));
+    background: linear-gradient(to right, #ddf9e8, #DBF3E5);
     border-radius: 36px;
   }
 

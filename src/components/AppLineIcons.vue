@@ -21,8 +21,8 @@
 .divider-icons__container {
   display: flex;
   align-items: center;
-  margin-bottom: 60px;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 60px;
 }
 
 .divider-icons__agent {

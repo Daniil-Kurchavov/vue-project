@@ -4,7 +4,7 @@ import AppAboutContest from './blocks/AppAboutContest.vue';
 </script>
 
 <template>
-  <div class="container page-contest">
+  <div class="page-contest container">
     <AppContest class="page-contest__first-screen" />
     <AppAboutContest />
   </div>
@@ -13,7 +13,7 @@ import AppAboutContest from './blocks/AppAboutContest.vue';
 <style scoped lang="scss">
 .page-contest {
   &__first-screen {
-    margin-bottom: 70px;
+    margin-bottom: 60px;
   }
 }
 

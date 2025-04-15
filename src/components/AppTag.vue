@@ -6,7 +6,7 @@
 
 <style scoped lang="scss">
 .tag {
-  height: 32px;
+  height: 35px;
   background-color: rgba(0, 174, 70, 0.1);
   color: #00ae46;
   border-radius: 8px;
@@ -18,6 +18,6 @@
   text-align: center;
   align-items: center;
   width: fit-content;
-  padding: 0 8px;
+  padding: 0 12px;
 }
 </style>
