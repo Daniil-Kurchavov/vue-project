@@ -52,7 +52,7 @@ import AppPoints from '@/components/AppPoints.vue';
 
 .contest-about {
   display: flex;
-  padding: 55px;
+  padding: 50px;
   border-radius: 48px;
   box-shadow: 0 10px 48px 0 rgba(0, 0, 0, 0.12);
   gap: 110px;
@@ -60,7 +60,7 @@ import AppPoints from '@/components/AppPoints.vue';
   &__cards {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
   }
 
   &__card {
