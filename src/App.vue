@@ -28,7 +28,7 @@ import AppAboutContest from './blocks/AppAboutContest.vue';
   max-width: 100%;
 
   @media (max-width: 991px) {
-    width: 700px;
+    width: 745px;
   }
 }
 </style>
