@@ -13,6 +13,10 @@
   align-items: center;
   gap: 13px;
 
+  @media (max-width: 991px) {
+    gap: 8px;
+  }
+
   &__line {
     width: 8px;
     height: 2px;

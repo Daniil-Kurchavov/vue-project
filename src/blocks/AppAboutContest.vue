@@ -18,7 +18,9 @@ import AppPoints from '@/components/AppPoints.vue';
         <div class="contest-about__card__img">
           <img class="card-img2" src="/icons/icon2.svg" alt="#" />
         </div>
-        <p class="contest-about__card__text contest-about__card__text_min text-16">Стадия MVP или готовое решение</p>
+        <p class="contest-about__card__text contest-about__card__text_min text-16">
+          Стадия MVP или готовое решение
+        </p>
       </div>
       <div class="contest-about__card">
         <div class="contest-about__card__img contest-about__card__img_cut">
@@ -57,10 +59,21 @@ import AppPoints from '@/components/AppPoints.vue';
   box-shadow: 0 10px 48px 0 rgba(0, 0, 0, 0.12);
   gap: 110px;
 
+  @media (max-width: 991px) {
+    flex-direction: column-reverse;
+    padding: 35px;
+    gap: 32px;
+  }
+
   &__cards {
     display: flex;
     flex-direction: column;
     gap: 15px;
+
+    @media (max-width: 991px) {
+      flex-direction: row;
+      height: 75px;
+    }
   }
 
   &__card {
@@ -72,6 +85,13 @@ import AppPoints from '@/components/AppPoints.vue';
     padding: 8px;
     width: fit-content;
 
+    @media (max-width: 991px) {
+      width: 330px;
+      flex-shrink: 0;
+      gap: 10px;
+      padding: 8px 15px 8px 8px;
+    }
+
     &__img {
       position: relative;
       width: 160px;
@@ -80,10 +100,16 @@ import AppPoints from '@/components/AppPoints.vue';
       border-radius: 100px;
       flex: none;
 
+      @media (max-width: 991px) {
+        height: 60px;
+        width: 90px;
+      }
+
       & img {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+        width: 100%;
       }
 
       &_cut {
@@ -103,16 +129,22 @@ import AppPoints from '@/components/AppPoints.vue';
   }
 
   &__tag {
-    margin-bottom: 24px;
+    margin-bottom: 25px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 15px;
+    }
   }
 
   &__title {
-    margin-bottom: 40px;
-    line-height: 108%;
+    @media (max-width: 991px) {
+      max-width: 355px;
+      margin-bottom: 15px;
+    }
   }
 
   &__subtitle {
-    margin-bottom: 16px;
+    margin-bottom: 15px;
     line-height: 145%;
   }
 

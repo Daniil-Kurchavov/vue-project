@@ -19,5 +19,11 @@
   align-items: center;
   width: fit-content;
   padding: 0 12px;
+
+  @media (max-width: 991px) {
+    font-size: 12px;
+    padding: 0 10px;
+    height: 30px;
+  }
 }
 </style>

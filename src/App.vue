@@ -14,13 +14,21 @@ import AppAboutContest from './blocks/AppAboutContest.vue';
 .page-contest {
   &__first-screen {
     margin-bottom: 60px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 65px;
+    }
   }
 }
-
 .container {
   width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
+  max-width: 100%;
+
+  @media (max-width: 991px) {
+    width: 700px;
+  }
 }
 </style>

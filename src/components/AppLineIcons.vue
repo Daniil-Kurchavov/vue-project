@@ -14,8 +14,12 @@
 .divider {
   width: 1px;
   height: 75px;
-  background-color: #1C1D22;
+  background-color: #1c1d22;
   opacity: 0.1;
+
+  @media (max-width:991px) {
+    height: 45px;
+  }
 }
 
 .divider-icons__container {
@@ -23,6 +27,10 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 60px;
+
+  @media (max-width: 991px) {
+    padding: 0 15px;
+  }
 }
 
 .divider-icons__agent {
@@ -32,6 +40,11 @@
   & img {
     width: 100%;
     height: 100%;
+  }
+
+  @media (max-width: 991px) {
+    width: 140xp;
+    height: 45px;
   }
 }
 
@@ -43,6 +56,11 @@
     width: 100%;
     height: 100%;
   }
+
+  @media (max-width:991px) {
+    width: 90px;
+    height: 45px;
+  }
 }
 
 .divider-icons__teh {
@@ -52,6 +70,11 @@
   & img {
     width: 100%;
     height: 100%;
+  }
+
+  @media (max-width:991px) {
+    width: 240px;
+    height: 45px;
   }
 }
 </style>

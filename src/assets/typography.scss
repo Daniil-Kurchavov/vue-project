@@ -6,6 +6,11 @@
 .title-48 {
     font-size: 48px;
     color: $primary-dark;
+
+    @media (max-width: 991px) {
+        font-size: 32px;
+        line-height: 110%;
+      }
 }
 
 .title-32 {
@@ -17,6 +22,10 @@
 .title-18 {
     font-size: 18px;
     color: $primary-dark;
+
+    @media (max-width: 991px) {
+        font-size: 16px;
+    }
 }
 
 .text-16 {
@@ -24,4 +33,8 @@
     color: $primary-dark;
     font-family: "TTFirsNeue-Regular";
     line-height: 150%;
+
+    @media (max-width: 991px) {
+        line-height: 120%;
+    }
 }
