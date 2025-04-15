@@ -6,13 +6,18 @@
 
 <style scoped lang="scss">
 .tag {
-  padding: 11px 12px;
-  background-color: rgba($green, 0.1);
-  color: $green;
+  height: 32px;
+  background-color: rgba(0, 174, 70, 0.1);
+  color: #00ae46;
   border-radius: 8px;
   font-size: 14px;
   line-height: 120%;
-  display: inline-block;
+  display: flex;
   text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  align-items: center;
+  width: fit-content;
+  padding: 0 8px;
 }
 </style>

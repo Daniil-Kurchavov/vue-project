@@ -1,5 +1,6 @@
 <script setup>
 import AppTag from '@/components/AppTag.vue';
+import AppPoints from '@/components/AppPoints.vue';
 </script>
 
 <template>
@@ -7,7 +8,7 @@ import AppTag from '@/components/AppTag.vue';
     <div class="contest-about__cards">
       <div class="contest-about__card">
         <div class="contest-about__card__img">
-          <img class="card-img1" src="./../../public/icons/icon1.svg" alt="#" />
+          <img class="card-img1" src="/icons/icon1.svg" alt="#" />
         </div>
         <p class="contest-about__card__text text-16">
           Юридическое лицо или&nbsp;ИП зарегистрировано в&nbsp;России
@@ -15,13 +16,13 @@ import AppTag from '@/components/AppTag.vue';
       </div>
       <div class="contest-about__card">
         <div class="contest-about__card__img">
-          <img class="card-img2" src="./../../public/icons/icon2.svg" alt="#" />
+          <img class="card-img2" src="/icons/icon2.svg" alt="#" />
         </div>
-        <p class="contest-about__card__text text-16">Стадия MVP или готовое решение</p>
+        <p class="contest-about__card__text contest-about__card__text_min text-16">Стадия MVP или готовое решение</p>
       </div>
       <div class="contest-about__card">
-        <div class="contest-about__card__img">
-            <img class="card-img3" src="./../../public/icons/icon3.svg" alt="#" />
+        <div class="contest-about__card__img contest-about__card__img_cut">
+          <img class="card-img3" src="/icons/icon3.svg" alt="#" />
         </div>
         <p class="contest-about__card__text text-16">
           Готовность к&nbsp;запуску и&nbsp;пилотированию продукта с&nbsp;партнерами конкурса
@@ -33,22 +34,10 @@ import AppTag from '@/components/AppTag.vue';
       <h2 class="contest-about__title title-48">Внедрение технологии 5G&nbsp;в инфраструктуру</h2>
       <h3 class="contest-about__subtitle title-18">Цели конкурса</h3>
       <div class="contest-about__goal">
-        <div class="contest-about__line">
-            <p class="horizontal__line"></p>
-            <p class="text-16">Выявление и&nbsp;внедрение инновационных продуктов</p>
-        </div>
-        <div class="contest-about__line">
-            <p class="horizontal__line"></p>
-            <p class="text-16">Улучшение беспроводной связи пятого поколения</p>
-        </div>
-        <div class="contest-about__line">
-            <p class="horizontal__line"></p>
-            <p class="text-16">Поддержание развития цифровых технологий</p>
-        </div>
-        <div class="contest-about__line">
-            <p class="horizontal__line"></p>
-            <p class="text-16">Систематизация направлений применения сетей 5G</p>
-        </div>
+        <AppPoints>Выявление и&nbsp;внедрение инновационных продуктов</AppPoints>
+        <AppPoints>Улучшение беспроводной связи пятого поколения</AppPoints>
+        <AppPoints>Поддержание развития цифровых технологий</AppPoints>
+        <AppPoints>Систематизация направлений применения сетей 5G</AppPoints>
       </div>
     </div>
   </div>
@@ -56,9 +45,9 @@ import AppTag from '@/components/AppTag.vue';
 
 <style lang="scss">
 .horizontal__line {
-    width: 8px;
-    height: 2px;
-    background-color: $green;
+  width: 8px;
+  height: 2px;
+  background-color: $green;
 }
 
 .contest-about {
@@ -79,9 +68,9 @@ import AppTag from '@/components/AppTag.vue';
     border-radius: 100px;
     border: 1px solid rgb(28, 29, 34, 0.1);
     align-items: center;
-    width: 460px;
     gap: 32px;
     padding: 8px;
+    width: fit-content;
 
     &__img {
       position: relative;
@@ -96,12 +85,20 @@ import AppTag from '@/components/AppTag.vue';
         top: 50%;
         transform: translateY(-50%);
       }
+
+      &_cut {
+        overflow: hidden;
+      }
     }
 
     &__text {
       font-family: 'TTFirsNeue-Medium';
       line-height: 150%;
       color: #000000;
+
+      &_min {
+        max-width: 150px;
+      }
     }
   }
 

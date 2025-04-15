@@ -6,29 +6,31 @@ import AppLineIcons from '@/components/AppLineIcons.vue';
 
 <template>
   <div class="app-contest">
-    <div class="app-contest__content">
-      <AppTag class="app-contest__tag">Технологический конкурс</AppTag>
-      <h1 class="title-64">5G Умный город</h1>
-      <p class="app-contest__text text-16">
-        Предложите свое уникальное решение в сфере технологических разработок
-      </p>
-      <div class="app-contest__bid">
-        <AppButton>Принять участие</AppButton>
-        <p class="text-16 text__opacity">Заявки принимаются до 27 марта</p>
+    <div class="app-contest__block">
+      <div class="app-contest__content">
+        <AppTag class="app-contest__tag">Технологический конкурс</AppTag>
+        <h1 class="title-64">5G Умный город</h1>
+        <p class="app-contest__text text-16">
+          Предложите свое уникальное решение в сфере технологических разработок
+        </p>
+        <div class="app-contest__bid">
+          <AppButton>Принять участие</AppButton>
+          <p class="text-16 text__opacity">Заявки принимаются до 27 марта</p>
+        </div>
+      </div>
+      <div class="app-contest__image-wrapper">
+        <div class="app-contest__img-content">
+          <img class="app-contest__img" src="/graphics.png" alt="#" />
+        </div>
       </div>
     </div>
-    <div class="app-contest__image-wrapper">
-      <div class="app-contest__img-content">
-        <img class="app-contest__img" src="./../../public/graphics.png" alt="#" />
-      </div>
+    <AppLineIcons />
     </div>
-  </div>
-  <AppLineIcons />
 </template>
 
 <style scoped lang="scss">
 .title-64 {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .text__opacity {
@@ -38,9 +40,15 @@ import AppLineIcons from '@/components/AppLineIcons.vue';
 }
 
 .app-contest {
-  display: flex;
-  margin-bottom: 85px;
-  justify-content: space-around;
+  background-color: #ffffff;
+  border-radius: 60px;
+  padding-top: 60px;
+  
+  &__block {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 80px;
+  }
 
   &__content {
     margin-top: 45px;
@@ -51,7 +59,7 @@ import AppLineIcons from '@/components/AppLineIcons.vue';
   }
 
   &__text {
-    margin-bottom: 48px;
+    margin-bottom: 50px;
     width: 305px;
     line-height: 150%;
   }
@@ -62,12 +70,12 @@ import AppLineIcons from '@/components/AppLineIcons.vue';
   }
 
   &__img {
-      position: absolute;
-      z-index: 1;
-      top: 50%;
-      transform: translateY(-50%);
-      right: -14%;
-    }
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -14%;
+  }
 
   &__img-content {
     width: 100%;
