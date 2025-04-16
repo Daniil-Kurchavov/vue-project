@@ -7,7 +7,7 @@ import AppPossibilities from './blocks/AppPossibilities.vue';
 <template>
   <div class="page-contest container">
     <AppContest class="page-contest__first-screen" />
-    <AppAboutContest />
+    <AppAboutContest class="page-contest__second-screen" />
     <AppPossibilities />
   </div>
 </template>
@@ -21,9 +21,13 @@ import AppPossibilities from './blocks/AppPossibilities.vue';
       margin-bottom: 65px;
     }
 
-    @media (max-width:768px) {
+    @media (max-width: 768px) {
       margin-bottom: 45px;
     }
+  }
+
+  &__second-screen {
+    margin-bottom: 120px;
   }
 }
 

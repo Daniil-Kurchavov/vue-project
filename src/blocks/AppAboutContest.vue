@@ -8,7 +8,7 @@ import AppPoints from '@/components/AppPoints.vue';
     <div class="contest-about__cards">
       <div class="contest-about__card">
         <div class="contest-about__card__img">
-          <img class="card-img1" src="/icons/icon1.svg" alt="#" />
+          <img class="card-img1" src="/icons/iconsAboutContest/icon1.svg" alt="#" />
         </div>
         <p class="contest-about__card__text text-16-med">
           Юридическое лицо или&nbsp;ИП зарегистрировано в&nbsp;России
@@ -16,7 +16,7 @@ import AppPoints from '@/components/AppPoints.vue';
       </div>
       <div class="contest-about__card">
         <div class="contest-about__card__img">
-          <img class="card-img2" src="/icons/icon2.svg" alt="#" />
+          <img class="card-img2" src="/icons/iconsAboutContest/icon2.svg" alt="#" />
         </div>
         <p class="contest-about__card__text contest-about__card__text_min text-16-med">
           Стадия MVP или готовое решение
@@ -24,7 +24,7 @@ import AppPoints from '@/components/AppPoints.vue';
       </div>
       <div class="contest-about__card">
         <div class="contest-about__card__img contest-about__card__img_cut">
-          <img class="card-img3" src="/icons/icon3.svg" alt="#" />
+          <img class="card-img3" src="/icons/iconsAboutContest/icon3.svg" alt="#" />
         </div>
         <p class="contest-about__card__text text-16-med">
           Готовность к&nbsp;запуску и&nbsp;пилотированию продукта с&nbsp;партнерами конкурса
