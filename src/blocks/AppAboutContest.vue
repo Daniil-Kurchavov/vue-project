@@ -83,6 +83,7 @@ import AppPoints from '@/components/AppPoints.vue';
       height: 75px;
       overflow-x: scroll;
       overflow-y: hidden;
+      flex-basis: auto;
     }
 
     @media (max-width: 768px) {
@@ -190,6 +191,10 @@ import AppPoints from '@/components/AppPoints.vue';
     display: flex;
     flex-direction: column;
     gap: 13px;
+
+    @media (max-width: 991px) {
+      gap: 8px;
+    }
 
     @media (max-width: 768px) {
       gap: 12px;
