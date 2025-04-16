@@ -16,10 +16,6 @@ defineProps({
   grid_num: {
     type: String,
   },
-  isFirstOrLast: {
-    type: Boolean,
-    default: false,
-  },
 });
 </script>
 
@@ -31,7 +27,7 @@ defineProps({
     <h3 class="possibillities-card__title">{{ title }}</h3>
     <p class="possibillities-card__text text-16">{{ text }}</p>
     <img
-      v-if="isFirstOrLast && secondaryImageSrc"
+      v-if="secondaryImageSrc"
       class="possibillities-card__secondary-img"
       :src="secondaryImageSrc"
       alt="#"

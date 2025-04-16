@@ -10,7 +10,6 @@ const data = ref([
     text: 'с другими участниками конкурса, а также партнёрами Фонда МИК',
     grid_num: '1',
     secondaryImageSrc: './icons/iconsPossibilities/big-books.svg',
-    isFirstOrLast: true,
   },
   {
     image: '/icons/iconsPossibilities/Hands.svg',
@@ -42,7 +41,6 @@ const data = ref([
     text: 'проекта, если оно соответствует запросам партнеров конкурса',
     grid_num: '6',
     secondaryImageSrc: './icons/iconsPossibilities/big-logo.svg',
-    isFirstOrLast: true,
   },
 ]);
 </script>
