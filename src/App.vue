@@ -18,8 +18,13 @@ import AppAboutContest from './blocks/AppAboutContest.vue';
     @media (max-width: 991px) {
       margin-bottom: 65px;
     }
+
+    @media (max-width:768px) {
+      margin-bottom: 40px;
+    }
   }
 }
+
 .container {
   width: 1280px;
   margin: 0 auto;
@@ -29,6 +34,10 @@ import AppAboutContest from './blocks/AppAboutContest.vue';
 
   @media (max-width: 991px) {
     width: 745px;
+  }
+
+  @media (max-width: 768px) {
+    width: 400px;
   }
 }
 </style>

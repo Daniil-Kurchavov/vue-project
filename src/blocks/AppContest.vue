@@ -31,11 +31,6 @@ import AppLineIcons from '@/components/AppLineIcons.vue';
 <style scoped lang="scss">
 .title-64 {
   margin-bottom: 10px;
-
-  @media (max-width:991px) {
-    font-size: 36px;
-    line-height: 117%;
-  }
 }
 
 .text__gray {
@@ -45,6 +40,11 @@ import AppLineIcons from '@/components/AppLineIcons.vue';
 
   @media (max-width: 991px) {
     padding-left: 5px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding-left: 25px;
   }
 }
 
@@ -58,6 +58,10 @@ import AppLineIcons from '@/components/AppLineIcons.vue';
     border-radius: 24px;
   }
 
+  @media (max-width: 768px) {
+    padding-top: 20px;
+  }
+
   &__block {
     display: flex;
     justify-content: space-between;
@@ -68,6 +72,12 @@ import AppLineIcons from '@/components/AppLineIcons.vue';
     @media (max-width: 991px) {
       padding: 0 35px;
       margin-bottom: 60px;
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 0 25px;
+      margin-bottom: 40px;
     }
   }
 
@@ -86,10 +96,14 @@ import AppLineIcons from '@/components/AppLineIcons.vue';
   &__text {
     margin-bottom: 50px;
     width: 305px;
-    line-height: 150%;
 
     @media (max-width: 991px) {
       margin-bottom: 30px;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 270px;
+      margin-bottom: 20px;
     }
   }
 
@@ -102,6 +116,10 @@ import AppLineIcons from '@/components/AppLineIcons.vue';
       max-width: 180px;
       gap: 10px;
     }
+
+    @media (max-width: 768px) {
+      max-width: 305px;
+    }
   }
 
   &__img {
@@ -110,10 +128,15 @@ import AppLineIcons from '@/components/AppLineIcons.vue';
     top: 50%;
     transform: translateY(-50%);
     right: -13%;
-    
+
     @media (max-width: 991px) {
       height: 100%;
       right: -20%;
+    }
+
+    @media (max-width: 768px) {
+      right: -10%;
+      transform: translateY(-48%);
     }
   }
 
@@ -133,10 +156,14 @@ import AppLineIcons from '@/components/AppLineIcons.vue';
     box-shadow: 0 21px 69.8px 0 rgba(0, 0, 0, 0.12);
     flex-shrink: 0;
 
-    @media (max-width:991px) {
+    @media (max-width: 991px) {
       width: 260px;
       height: 290px;
       outline: 6px solid #fff;
+    }
+
+    @media (max-width: 768px) {
+      width: 300px;
     }
   }
 }

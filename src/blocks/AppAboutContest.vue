@@ -10,7 +10,7 @@ import AppPoints from '@/components/AppPoints.vue';
         <div class="contest-about__card__img">
           <img class="card-img1" src="/icons/icon1.svg" alt="#" />
         </div>
-        <p class="contest-about__card__text text-16">
+        <p class="contest-about__card__text text-16-med">
           Юридическое лицо или&nbsp;ИП зарегистрировано в&nbsp;России
         </p>
       </div>
@@ -18,7 +18,7 @@ import AppPoints from '@/components/AppPoints.vue';
         <div class="contest-about__card__img">
           <img class="card-img2" src="/icons/icon2.svg" alt="#" />
         </div>
-        <p class="contest-about__card__text contest-about__card__text_min text-16">
+        <p class="contest-about__card__text contest-about__card__text_min text-16-med">
           Стадия MVP или готовое решение
         </p>
       </div>
@@ -26,7 +26,7 @@ import AppPoints from '@/components/AppPoints.vue';
         <div class="contest-about__card__img contest-about__card__img_cut">
           <img class="card-img3" src="/icons/icon3.svg" alt="#" />
         </div>
-        <p class="contest-about__card__text text-16">
+        <p class="contest-about__card__text text-16-med">
           Готовность к&nbsp;запуску и&nbsp;пилотированию продукта с&nbsp;партнерами конкурса
         </p>
       </div>
@@ -65,6 +65,12 @@ import AppPoints from '@/components/AppPoints.vue';
     gap: 32px;
   }
 
+  @media (max-width: 768px) {
+    box-shadow: none;
+    padding: 10px;
+    gap: 15px;
+  }
+
   &__cards {
     display: flex;
     flex-direction: column;
@@ -73,6 +79,15 @@ import AppPoints from '@/components/AppPoints.vue';
     @media (max-width: 991px) {
       flex-direction: row;
       height: 75px;
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
+
+    @media (max-width: 768px) {
+      overflow-x: hidden;
+      flex-direction: column;
+      height: auto;
+      gap: 8px;
     }
   }
 
@@ -89,7 +104,12 @@ import AppPoints from '@/components/AppPoints.vue';
       width: 330px;
       flex-shrink: 0;
       gap: 10px;
-      padding: 8px 15px 8px 8px;
+      padding: 8px;
+      padding-right: 15px;
+
+      @media (max-width: 768px) {
+        gap: 15px;
+      }
     }
 
     &__img {
@@ -103,6 +123,11 @@ import AppPoints from '@/components/AppPoints.vue';
       @media (max-width: 991px) {
         height: 60px;
         width: 90px;
+      }
+
+      @media (max-width: 768px) {
+        width: 65px;
+        height: 50px;
       }
 
       & img {
@@ -134,6 +159,10 @@ import AppPoints from '@/components/AppPoints.vue';
     @media (max-width: 991px) {
       margin-bottom: 15px;
     }
+
+    @media (max-width: 768px) {
+      margin-bottom: 10px;
+    }
   }
 
   &__title {
@@ -146,6 +175,10 @@ import AppPoints from '@/components/AppPoints.vue';
   &__subtitle {
     margin-bottom: 15px;
     line-height: 145%;
+
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__goal {

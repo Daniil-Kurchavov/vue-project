@@ -25,5 +25,10 @@
     padding: 0 10px;
     height: 30px;
   }
+
+  @media (max-width: 768px) {
+    line-height: 115%;
+    font-size: 11px;
+  }
 }
 </style>

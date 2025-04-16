@@ -20,6 +20,10 @@
   @media (max-width:991px) {
     height: 45px;
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .divider-icons__container {
@@ -30,6 +34,10 @@
 
   @media (max-width: 991px) {
     padding: 0 15px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 25px;
   }
 }
 
@@ -43,8 +51,13 @@
   }
 
   @media (max-width: 991px) {
-    width: 140xp;
+    width: 140px;
     height: 45px;
+  }
+
+  @media (max-width: 768px) {
+    width: 85px;
+    height: 27px;
   }
 }
 
@@ -61,6 +74,11 @@
     width: 90px;
     height: 45px;
   }
+
+  @media (max-width: 768px) {
+    width: 55px;
+    height: 27px;
+  }
 }
 
 .divider-icons__teh {
@@ -75,6 +93,11 @@
   @media (max-width:991px) {
     width: 240px;
     height: 45px;
+  }
+
+  @media (max-width: 768px) {
+    width: 125px;
+    height: 23px;
   }
 }
 </style>

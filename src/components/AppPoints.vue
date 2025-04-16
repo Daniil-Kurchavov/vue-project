@@ -17,6 +17,10 @@
     gap: 8px;
   }
 
+  @media (max-width: 768px) {
+    gap: 15px;
+  }
+
   &__line {
     width: 8px;
     height: 2px;
