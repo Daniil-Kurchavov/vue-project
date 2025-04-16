@@ -14,7 +14,7 @@ import AppLineIcons from '@/components/AppLineIcons.vue';
           Предложите свое уникальное решение в сфере технологических разработок
         </p>
         <div class="app-contest__bid">
-          <AppButton>Принять участие</AppButton>
+          <AppButton class="app-contest__bid__button">Принять участие</AppButton>
           <p class="text-16 text__gray">Заявки принимаются до 27 марта</p>
         </div>
       </div>
@@ -31,20 +31,24 @@ import AppLineIcons from '@/components/AppLineIcons.vue';
 <style scoped lang="scss">
 .title-64 {
   margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 12px;
+  }
 }
 
 .text__gray {
   color: $gray;
   width: 170px;
-  line-height: 150%;
 
   @media (max-width: 991px) {
-    padding-left: 5px;
+    padding-left: 8px;
+    width: 175px;
   }
 
   @media (max-width: 768px) {
     width: 100%;
-    padding-left: 25px;
+    padding-left: 20px;
   }
 }
 
@@ -59,13 +63,13 @@ import AppLineIcons from '@/components/AppLineIcons.vue';
   }
 
   @media (max-width: 768px) {
-    padding-top: 20px;
+    padding-top: 25px;
   }
 
   &__block {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 80px;
+    margin-bottom: 85px;
     padding: 0 60px;
     gap: 30px;
 
@@ -76,25 +80,33 @@ import AppLineIcons from '@/components/AppLineIcons.vue';
 
     @media (max-width: 768px) {
       flex-direction: column;
-      padding: 0 25px;
+      padding: 0 28px;
       margin-bottom: 40px;
     }
   }
 
   &__content {
-    margin-top: 45px;
+    margin-top: 50px;
 
     @media (max-width: 991px) {
-      margin-top: 0;
+      margin-top: -3px;
     }
   }
 
   &__tag {
     margin-bottom: 15px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 15px;
+    }
   }
 
   &__text {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
     width: 305px;
 
     @media (max-width: 991px) {
@@ -113,12 +125,17 @@ import AppLineIcons from '@/components/AppLineIcons.vue';
 
     @media (max-width: 991px) {
       flex-direction: column;
-      max-width: 180px;
       gap: 10px;
     }
 
     @media (max-width: 768px) {
-      max-width: 305px;
+      gap: 15px;
+    }
+
+    &__button {
+      @media (max-width: 768px) {
+        align-self: stretch;
+      }
     }
   }
 

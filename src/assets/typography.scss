@@ -54,6 +54,10 @@
   }
 
   @media (max-width: 991px) {
+    line-height: 150%;
+  }
+
+  @media (max-width: 768px) {
     line-height: 120%;
   }
 }

@@ -67,8 +67,8 @@ import AppPoints from '@/components/AppPoints.vue';
 
   @media (max-width: 768px) {
     box-shadow: none;
-    padding: 10px;
-    gap: 15px;
+    padding: 10px 12px;
+    gap: 20px;
   }
 
   &__cards {
@@ -161,7 +161,7 @@ import AppPoints from '@/components/AppPoints.vue';
     }
 
     @media (max-width: 768px) {
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
   }
 
@@ -173,18 +173,23 @@ import AppPoints from '@/components/AppPoints.vue';
   }
 
   &__subtitle {
-    margin-bottom: 15px;
+    margin-bottom: 13px;
     line-height: 145%;
 
     @media (max-width: 768px) {
-      margin-bottom: 20px;
+      margin-bottom: 15px;
+      line-height: 150%;
     }
   }
 
   &__goal {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
+
+    @media (max-width: 768px) {
+      gap: 12px;
+    }
   }
 
   &__line {

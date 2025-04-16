@@ -20,7 +20,7 @@ import AppAboutContest from './blocks/AppAboutContest.vue';
     }
 
     @media (max-width:768px) {
-      margin-bottom: 40px;
+      margin-bottom: 45px;
     }
   }
 }
@@ -37,7 +37,8 @@ import AppAboutContest from './blocks/AppAboutContest.vue';
   }
 
   @media (max-width: 768px) {
-    width: 400px;
+    width: 375px;
+    padding: 0 8px;
   }
 }
 </style>

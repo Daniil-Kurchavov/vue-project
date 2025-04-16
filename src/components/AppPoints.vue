@@ -15,6 +15,7 @@
 
   @media (max-width: 991px) {
     gap: 8px;
+    align-items: normal;
   }
 
   @media (max-width: 768px) {
@@ -25,6 +26,10 @@
     width: 8px;
     height: 2px;
     background-color: $green;
+
+    @media (max-width: 991px) {
+      margin-top: 8px;
+    }
   }
 }
 </style>
