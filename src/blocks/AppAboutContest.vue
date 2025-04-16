@@ -57,7 +57,7 @@ import AppPoints from '@/components/AppPoints.vue';
   padding: 60px;
   border-radius: 48px;
   box-shadow: 0 10px 48px 0 rgba(0, 0, 0, 0.12);
-  gap: 110px;
+  gap: 95px;
 
   @media (max-width: 991px) {
     flex-direction: column-reverse;
@@ -75,6 +75,8 @@ import AppPoints from '@/components/AppPoints.vue';
     display: flex;
     flex-direction: column;
     gap: 15px;
+    flex-basis: 470px;
+    flex-shrink: 0;
 
     @media (max-width: 991px) {
       flex-direction: row;
@@ -166,6 +168,8 @@ import AppPoints from '@/components/AppPoints.vue';
   }
 
   &__title {
+    margin-bottom: 40px;
+
     @media (max-width: 991px) {
       max-width: 355px;
       margin-bottom: 15px;
@@ -185,7 +189,7 @@ import AppPoints from '@/components/AppPoints.vue';
   &__goal {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 13px;
 
     @media (max-width: 768px) {
       gap: 12px;

@@ -10,6 +10,7 @@ import AppTag from '@/components/AppTag.vue';
             <div class="possibillities__cell">
                 <div class="possibillities__cell__img"><img src="" alt="#"></div>
                 <h3 class="possibillities__cell__title"></h3>
+                <p class=""></p>
             </div>
         </div>
     </div>

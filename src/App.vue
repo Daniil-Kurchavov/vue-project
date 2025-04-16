@@ -1,12 +1,14 @@
 <script setup>
 import AppContest from './blocks/AppContest.vue';
 import AppAboutContest from './blocks/AppAboutContest.vue';
+import AppPossibilities from './blocks/AppPossibilities.vue';
 </script>
 
 <template>
   <div class="page-contest container">
     <AppContest class="page-contest__first-screen" />
     <AppAboutContest />
+    <AppPossibilities />
   </div>
 </template>
 
