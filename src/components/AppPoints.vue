@@ -1,9 +1,13 @@
-<script setup></script>
+<script setup>
+defineProps({
+  isGray: Boolean,
+});
+</script>
 
 <template>
   <div class="points">
     <p class="points__line"></p>
-    <p class="text-16"><slot></slot></p>
+    <p class="text-16" :class="isGray && 'gray'"><slot></slot></p>
   </div>
 </template>
 

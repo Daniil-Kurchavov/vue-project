@@ -34,6 +34,10 @@ import AppInformation from './blocks/AppInformation.vue';
 
   &__third-screen {
     margin-bottom: 235px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 110px;
+    }
   }
 }
 
