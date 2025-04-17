@@ -53,7 +53,6 @@ import AppLineIcons from '@/components/AppLineIcons.vue';
 }
 
 .app-contest {
-  background-color: #ffffff;
   border-radius: 60px;
   padding-top: 60px;
 

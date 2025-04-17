@@ -21,11 +21,13 @@ defineProps({
 
 <template>
   <div :class="'possibillities-card possibillities-card' + grid_num">
-    <div class="possibillities-card__block">
-      <img class="possibillities-card__img" :src="imageSrc" alt="#" />
+    <div class="possibillities-card__flex">
+      <div class="possibillities-card__block">
+        <img class="possibillities-card__img" :src="imageSrc" alt="#" />
+      </div>
+      <h3 class="possibillities-card__title">{{ title }}</h3>
     </div>
-    <h3 class="possibillities-card__title">{{ title }}</h3>
-    <p class="possibillities-card__text text-16">{{ text }}</p>
+    <p class="possibillities-card__text">{{ text }}</p>
     <img
       v-if="secondaryImageSrc"
       class="possibillities-card__secondary-img"
@@ -39,9 +41,26 @@ defineProps({
 .possibillities {
   &-card {
     padding: 28px;
+    padding-bottom: 5px;
     border-radius: 24px;
     border: 1px solid #e3e3e4;
     position: relative;
+
+    @media (max-width: 991px) {
+      padding: 22px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 20px;
+      padding-bottom: 5px;
+    }
+
+    &__flex {
+      @media (max-width: 768px) {
+        display: flex;
+        gap: 15px;
+      }
+    }
 
     &__block {
       position: relative;
@@ -49,7 +68,11 @@ defineProps({
       width: 44px;
       background-color: $light-green;
       border-radius: 8px;
-      margin-bottom: 40px;
+      margin-bottom: 38px;
+
+      @media (max-width: 991px) {
+        margin-bottom: 24px;
+      }
     }
 
     &__img {
@@ -64,18 +87,53 @@ defineProps({
       line-height: 133%;
       color: $primary-dark;
       max-width: 255px;
-      margin-bottom: 12px;
+      margin-bottom: 8px;
+
+      @media (max-width: 991px) {
+        font-size: 22px;
+        line-height: 100%;
+        max-width: 281px;
+        margin-bottom: 9px;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 18px;
+        line-height: 145%;
+        max-width: 224px;
+      }
     }
 
     &__text {
       max-width: 230px;
+      font-size: 16px;
+      color: $primary-dark;
+      font-family: 'TTFirsNeue-Regular';
+      line-height: 150%;
+
+      @media (max-width: 991px) {
+        line-height: 120%;
+        max-width: 285px;
+      }
     }
 
     &__secondary-img {
       position: absolute;
-      top: 52%;
+      top: 63%;
       transform: translateY(-50%);
-      right: -2%;
+      right: -4%;
+
+      @media (max-width: 991px) {
+        right: 4%;
+        width: 36%;
+        top: 55%;
+      }
+
+      @media (max-width: 768px) {
+        top: 73%;
+        right: 26%;
+        width: 60%;
+        height: 59%;
+      }
     }
   }
 }

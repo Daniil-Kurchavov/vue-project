@@ -37,6 +37,7 @@ import AppPossibilities from './blocks/AppPossibilities.vue';
   padding: 0 20px;
   position: relative;
   max-width: 100%;
+  background-color: #ffffff;
 
   @media (max-width: 991px) {
     width: 745px;

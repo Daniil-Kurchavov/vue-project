@@ -68,10 +68,26 @@ const data = ref([
 .possibillities {
   &__tag {
     margin-bottom: 24px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 15px;
+    }
   }
 
   &__title {
     margin-bottom: 32px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 32px;
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__cards {
@@ -79,10 +95,35 @@ const data = ref([
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
-    height: 600px;
     grid-template-areas:
       'a a b c'
       'd f e e';
+
+    @media (max-width: 991px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        'a b'
+        'a c'
+        'd f'
+        'e e';
+
+      gap: 16px;
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+      grid-template-areas:
+        'a'
+        'a'
+        'b'
+        'c'
+        'd'
+        'f'
+        'e'
+        'e';
+        gap: 12px;
+    }
   }
 
   &-card1 {
