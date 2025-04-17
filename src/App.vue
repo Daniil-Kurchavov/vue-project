@@ -2,13 +2,15 @@
 import AppContest from './blocks/AppContest.vue';
 import AppAboutContest from './blocks/AppAboutContest.vue';
 import AppPossibilities from './blocks/AppPossibilities.vue';
+import AppInformation from './blocks/AppInformation.vue';
 </script>
 
 <template>
   <div class="page-contest container">
     <AppContest class="page-contest__first-screen" />
     <AppAboutContest class="page-contest__second-screen" />
-    <AppPossibilities />
+    <AppPossibilities class="page-contest__third-screen" />
+    <AppInformation />
   </div>
 </template>
 
@@ -28,6 +30,10 @@ import AppPossibilities from './blocks/AppPossibilities.vue';
 
   &__second-screen {
     margin-bottom: 120px;
+  }
+
+  &__third-screen {
+    margin-bottom: 235px;
   }
 }
 
