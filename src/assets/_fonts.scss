@@ -1,9 +1,11 @@
 @font-face {
   font-family: 'TTFirsNeue-Medium';
   src: url('@/assets/fonts/TTFirsNeue-Medium.woff2') format('woff2');
+  font-weight: 500;
 }
 
 @font-face {
   font-family: 'TTFirsNeue-Regular';
   src: url('@/assets/fonts/TTFirsNeue-Regular.woff2') format('woff2');
+  font-weight: 400;
 }

@@ -3,6 +3,7 @@ import AppContest from './blocks/AppContest.vue';
 import AppAboutContest from './blocks/AppAboutContest.vue';
 import AppPossibilities from './blocks/AppPossibilities.vue';
 import AppInformation from './blocks/AppInformation.vue';
+import AppCalendar from './blocks/AppCalendar.vue';
 </script>
 
 <template>
@@ -10,7 +11,8 @@ import AppInformation from './blocks/AppInformation.vue';
     <AppContest class="page-contest__first-screen" />
     <AppAboutContest class="page-contest__second-screen" />
     <AppPossibilities class="page-contest__third-screen" />
-    <AppInformation />
+    <AppInformation class="page-contest__fourth-screen"/>
+    <AppCalendar />
   </div>
 </template>
 
@@ -39,6 +41,10 @@ import AppInformation from './blocks/AppInformation.vue';
       margin-bottom: 110px;
     }
   }
+
+  &__fourth-screen {
+    margin-bottom: 120px;
+  }
 }
 
 .container {
@@ -48,6 +54,7 @@ import AppInformation from './blocks/AppInformation.vue';
   position: relative;
   max-width: 100%;
   background-color: #ffffff;
+  border-radius: 60px;
 
   @media (max-width: 991px) {
     width: 745px;
@@ -55,7 +62,7 @@ import AppInformation from './blocks/AppInformation.vue';
 
   @media (max-width: 768px) {
     width: 375px;
-    padding: 0 8px;
+    padding: 0 20px;
   }
 }
 </style>

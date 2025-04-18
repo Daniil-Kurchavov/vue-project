@@ -1,12 +1,12 @@
 <script setup></script>
 
 <template>
-  <div class="divider-icons__container">
-    <div class="divider-icons__agent"><img src="/moscow_agent.svg" alt="#" /></div>
+  <div class="line-icons">
+    <div class="line-icons__agent"><img src="/moscow_agent.svg" alt="#" /></div>
     <div class="divider"></div>
-    <div class="divider-icons__project"><img src="/moscow-project.svg" alt="#" /></div>
+    <div class="line-icons__project"><img src="/moscow-project.svg" alt="#" /></div>
     <div class="divider"></div>
-    <div class="divider-icons__teh"><img src="/teh.svg" alt="#" /></div>
+    <div class="line-icons__teh"><img src="/teh.svg" alt="#" /></div>
   </div>
 </template>
 
@@ -26,7 +26,7 @@
   }
 }
 
-.divider-icons__container {
+.line-icons {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,7 +41,7 @@
   }
 }
 
-.divider-icons__agent {
+.line-icons__agent {
   width: 180px;
   height: 60px;
 
@@ -61,7 +61,7 @@
   }
 }
 
-.divider-icons__project {
+.line-icons__project {
   width: 120px;
   height: 60px;
 
@@ -81,7 +81,7 @@
   }
 }
 
-.divider-icons__teh {
+.line-icons__teh {
   width: 312px;
   height: 60px;
 

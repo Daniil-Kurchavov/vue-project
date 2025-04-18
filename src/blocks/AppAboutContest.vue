@@ -67,7 +67,7 @@ import AppPoints from '@/components/AppPoints.vue';
 
   @media (max-width: 768px) {
     box-shadow: none;
-    padding: 10px 12px;
+    padding: 10px 0px;
     gap: 20px;
   }
 

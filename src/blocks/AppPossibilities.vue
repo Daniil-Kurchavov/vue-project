@@ -8,48 +8,48 @@ const data = ref([
     image: '/icons/iconsPossibilities/Rocket.svg',
     title: 'Создание совместных проектов',
     text: 'с другими участниками конкурса, а также партнёрами Фонда МИК',
-    grid_num: '1',
+    gridNum: '1',
     secondaryImageSrc: './icons/iconsPossibilities/big-books.svg',
   },
   {
     image: '/icons/iconsPossibilities/Hands.svg',
     title: 'Пилотирование продукта ',
     text: 'с партнерами конкурса на предприятиях крупнейших компаний в отрасли',
-    grid_num: '2',
+    gridNum: '2',
   },
   {
     image: '/icons/iconsPossibilities/Lightbulb.svg',
     title: 'PR-поддержку ',
     text: 'и повышение узнаваемости проекта от Московского инновационного кластера',
-    grid_num: '3',
+    gridNum: '3',
   },
   {
     image: '/icons/iconsPossibilities/User.svg',
     title: 'Экспертную оценку и диагностику решения ',
     text: 'от ведущих специалистов в отрасли медиа',
-    grid_num: '4',
+    gridNum: '4',
   },
   {
     image: '/icons/iconsPossibilities/Hand-coins.svg',
     title: 'Инвестиции от партнеров Фонда МИК',
     text: 'если их заинтересует решение или проект конкурсанта',
-    grid_num: '5',
+    gridNum: '5',
   },
   {
     image: '/icons/iconsPossibilities/Logo.svg',
     title: 'Возможность внедрения и масштабирования',
     text: 'проекта, если оно соответствует запросам партнеров конкурса',
-    grid_num: '6',
+    gridNum: '6',
     secondaryImageSrc: './icons/iconsPossibilities/big-logo.svg',
   },
 ]);
 </script>
 
 <template>
-  <div class="possibillities">
-    <AppTag class="possibillities__tag">Возможности</AppTag>
-    <h2 class="possibillities__title title-48">Что получают участники конкурса</h2>
-    <div class="possibillities__cards">
+  <div class="possibilities">
+    <AppTag class="possibilities__tag">Возможности</AppTag>
+    <h2 class="possibilities__title title-48">Что получают участники конкурса</h2>
+    <div class="possibilities__cards">
       <AppPossibillitiesCard
         v-for="(card, index) in data"
         :secondaryImageSrc="card.secondaryImageSrc"
@@ -57,7 +57,7 @@ const data = ref([
         :image-src="card.image"
         :title="card.title"
         :text="card.text"
-        :grid_num="card.grid_num"
+        :gridNum="card.gridNum"
         :is-first-or-last="card.isFirstOrLast"
       />
     </div>
@@ -65,7 +65,7 @@ const data = ref([
 </template>
 
 <style lang="scss">
-.possibillities {
+.possibilities {
   &__tag {
     margin-bottom: 24px;
 
