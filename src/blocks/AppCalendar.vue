@@ -130,6 +130,7 @@ import AppTag from '@/components/AppTag.vue';
         )
         0 0 / 100% 100%;
     background-repeat: no-repeat;
+  }
 
   &__image {
     vertical-align: middle;
