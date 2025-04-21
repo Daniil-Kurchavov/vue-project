@@ -3,7 +3,7 @@ import AppContest from './blocks/AppContest.vue';
 import AppAboutContest from './blocks/AppAboutContest.vue';
 import AppPossibilities from './blocks/AppPossibilities.vue';
 import AppInformation from './blocks/AppInformation.vue';
-import AppCalendar from './blocks/AppCalendar.vue';
+import AppCalendarNew from './blocks/AppCalendar.vue';
 </script>
 
 <template>
@@ -12,7 +12,7 @@ import AppCalendar from './blocks/AppCalendar.vue';
     <AppAboutContest class="page-contest__second-screen" />
     <AppPossibilities class="page-contest__third-screen" />
     <AppInformation class="page-contest__fourth-screen"/>
-    <AppCalendar />
+    <AppCalendarNew />
   </div>
 </template>
 
